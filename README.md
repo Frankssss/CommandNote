@@ -75,3 +75,7 @@ git tag <name>
 git tag <name> <commit>  
 给提交历史加标签
 
+git config --global alias.st status
+配置别名
+
+
