@@ -30,6 +30,9 @@ git log
 git diff <file>  
 对比工作区和暂存区文件的差异
 
+git diff HEAD -- <filename>  
+对比工作区和当前分支最新提交的区别
+
 git diff HEAD -- <file>  
 查看工作区和当前分支最新提交区别
 
@@ -75,10 +78,10 @@ git tag <name>
 git tag <name> <commit>  
 给提交历史加标签
 
-git tag -d name
+git tag -d name  
 删除标签
 
-git push origin name 
+git push origin name  
 标签发布
 
 git config --global alias.st status
