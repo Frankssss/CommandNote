@@ -8,10 +8,13 @@ git init
 git add <file>
 将工作区文件添加到暂存区
 
-git commit -m 'msg'
+git commit -m <message>
 将暂存区的文件与描述提交到分支
 
-git clone url 
+git add origin master <url>
+添加远程仓库
+
+git clone <url> 
 克隆远程存储库
 
 git status 
@@ -23,6 +26,9 @@ git log
 git diff <file>
 对比工作区和暂存区文件的差异
 
+git diff HEAD -- <file>
+查看工作区和当前分支最新提交区别
+
 git reset HEAD <commit>
 将当前分支HEAD复位到指定状态
 
@@ -32,7 +38,7 @@ git reset --hard <commit>
 git rm <file>
 删除工作区和暂存区的文件
 
-git checkout --<file>
+git checkout -- <file>
 将暂存区文件恢复到工作区
 
 git mv <source> <destination>
@@ -46,6 +52,9 @@ git branch <branchname>
 
 git checkout <branchname>
 切换到指定分支
+
+git checkout -b  <branchname>
+创建并切换到分支
 
 git merge <branchname>
 合并分支
