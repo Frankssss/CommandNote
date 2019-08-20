@@ -30,11 +30,11 @@ git log
 git diff <file>  
 对比工作区和暂存区文件的差异
 
-git diff HEAD -- <filename>  
-对比工作区和当前分支最新提交的区别
-
 git diff HEAD -- <file>  
-查看工作区和当前分支最新提交区别
+查看工作区和版本库区别
+
+git diff --staged / git diff --cached  
+比较暂存区和版本库差异
 
 git reset HEAD <commit>  
 将当前分支HEAD复位到指定状态
@@ -86,5 +86,4 @@ git push origin name
 
 git config --global alias.st status
 配置别名
-
 
