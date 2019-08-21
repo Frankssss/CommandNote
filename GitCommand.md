@@ -51,6 +51,9 @@ git checkout -- <file>
 git mv <source> <destination>  
 移动工作区文件
 
+git mv <filename> <filename>
+重命名工作区文件
+
 git branch  
 查看当前分支
 
