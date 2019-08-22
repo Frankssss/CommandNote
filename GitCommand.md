@@ -18,6 +18,12 @@ git commit -m <message>
 git add origin master <url>  
 添加远程仓库
 
+git remote rm origin   
+删除指定的远程
+
+git remote -v  
+列出所有的远程
+
 git clone <url>  
 克隆远程存储库
 
