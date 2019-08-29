@@ -129,4 +129,70 @@ img input
 内边距 padding 外边距 margin  边框 border
 	padding-left padding-right  padding-top padding-bottom
 	
+margin 层的边框以外留的空白
+background-color 背景颜色
+background-image 背景图片
+padding 层的边框到层的内容之间的空白
+border 边框
+content 内容
+填充默认顺序 上、右、下、左   上下一致可省略下 右左一致可省略左
+	
 边框样式  border-width:2px;border-style:solid;border-color:red;
+
+布局模型 
+1.流动模型 （Flow）
+2.浮动模型 （Float）
+3.层模型 （Layer）
+
+流动布局模型特征
+1.块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布
+  因为在默认状态下，块状元素的宽度都为100%， 实际上 块状元素都会以行的形式占据位置。
+2.在流动模型下，内联模型都会在所处的包含元素内从左到右水平分布显示
+
+浮动模型 float:left 
+
+层模型 三种形式 
+1.绝对定位 position:absolute
+2.相对定位 position:relative
+3.固定定位 position:fixed
+
+Relative Absoulte组合使用 相对其他元素进行定位
+1.参照定位的元素必须是相对定位元素的前辈元素
+2.参照定位的元素必须加入position:relatve
+3.定位元素加入 position:absolute
+
+颜色值缩写 
+每两位的值相同，可以缩写一般 #000000 #000 #336699 #369
+颜色命令颜色 color:red
+RGB颜色 color:rgb(133, 45, 200)
+十六进制颜色 color:#00ffff
+
+长度值   px(像素)、 em、 % 百分比 相对单位
+像素指的是显示器上的一个小点
+em 就是给定的font-size值    如果给font-size设置单位为em时， 则以父元素的font-size为基础
+百分比 设置行高为字体的130%   font-size:12px;line-height:130%
+
+设置水平居中：
+行内元素  如果被设置元素为文本、图片等行内元素时， 水平居中时通过给父元素设置text-align:center来实现的
+定宽块状元素（width为固定值）  margin: auto <=>  margin-left:auto;margin-right:auto;
+不定宽块状元素 
+	1.加入table标签 利用table标签的长度自适应性
+	2.设置display;inline 显示类型为行内元素
+	3.设置position:relative和left:50%  
+	
+设置垂直居中：
+单行文本  设置父元素的height和line-height高度一致来实现的 
+
+隐性改变display类型 
+1.positio:absolute
+2.float:left or float:right 
+元素的display显示类型自动变为 display:inline-block
+
+
+
+
+
+
+
+
+
