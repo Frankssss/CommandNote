@@ -184,7 +184,7 @@ em 就是给定的font-size值    如果给font-size设置单位为em时， 则以父元素的font-siz
 单行文本  设置父元素的height和line-height高度一致来实现的 
 
 隐性改变display类型 
-1.positio:absolute
+1.position:absolute
 2.float:left or float:right 
 元素的display显示类型自动变为 display:inline-block
 
