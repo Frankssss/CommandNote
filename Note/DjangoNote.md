@@ -49,6 +49,9 @@
 		+500servererror
 		+404pagenotfound
 		
+#### makemigrations 
++ makemigrations django会对比模型与已有数据库之间的差异
+
 
 Fields 负责验证输入并直接在模板中使用 widget 负责渲染网页上HTML表单的输入元素和提取提交的原始数据
 	

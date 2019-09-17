@@ -16,3 +16,13 @@ id选择器 $("#id")
 	$("prev + next") 相邻兄弟选择器
 	$("prev ~ sublings") 一般兄弟选择器
 	
+ABJ24P0981053.01
+https://www.bootcss.com/p/font-awesome/#
+$(".reply_to").click(function(){
+	 var parent = $(this).attr('id');
+	 $("input[name^='parent']").val(parent);
+	 var user =
+	 CKEDITOR.instances['id_comment_text'].setData('@sadfsdf\n');
+	 $('body').animate({scrollTop: $('#comment_form').offset().top}, 500);
+	 return false;
+ });
