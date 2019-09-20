@@ -57,9 +57,15 @@ Fields ¸ºÔðÑéÖ¤ÊäÈë²¢Ö±½ÓÔÚÄ£°åÖÐÊ¹ÓÃ widget ¸ºÔðäÖÈ¾ÍøÒ³ÉÏHTML±íµ¥µÄÊäÈëÔªËØºÍÌ
 	
 
 
-
-
-
+#### Django²éÕÒÎÄ¼þÊÇ¶èÐÔ²éÕÒ
++ STATICFILES_DIRS STATIC_ROOT STATIC_URL ²îÒì
+	+ STATICFILES_DIRS
+		+ Èç¹ûÃ»ÓÐÉè£¬Django»á×Ô¶¯µ½¸÷¸öappÏÂµÄstaticÎÄ¼þ¼ÐÀïÃæ²éÕÒ¾²Ì¬ÎÄ¼þ
+		+ Èç¹ûÉèÖÃÁË£¬Django»áÏÈµ½STATICFILES_DIRSÉè¶¨µÄÄ¿Â¼²éÕÒ¾²Ì¬ÎÄ¼þ£¬ Æä´ÎÔÙµ½¸÷¸öappÏÂµÄstaticÎÄ¼þ¼ÐÀïÃæ²éÕÒ
+	+ STATIC_URL
+		+ ÀûÓÃÇ°×ºstatic_urlÀ´Ó³ÉäSTATIC_ROOT,STATIC_URLÓÃÓÚÒýÓÃSTATIC_ROOTËùÖ¸ÏòµÄ¾²Ì¬ÎÄ¼þ
+	+STATIC_ROOT
+		+ ²¿Êð¾²Ì¬ÎÄ¼þÊ±ËùÓÐµÄ¾²Ì¬ÎÄ¼þ¾ÛºÏÄ¿Â¼¾ø¶ÔµØÖ·
 
 
 
@@ -71,7 +77,7 @@ Fields ¸ºÔðÑéÖ¤ÊäÈë²¢Ö±½ÓÔÚÄ£°åÖÐÊ¹ÓÃ widget ¸ºÔðäÖÈ¾ÍøÒ³ÉÏHTML±íµ¥µÄÊäÈëÔªËØºÍÌ
 	5ÖÐ¼ä¼þ¶ÔÏìÓ¦µÄÊý¾Ý½øÐÐ´¦Àí
 	6web·þÎñÆ÷(wsgi)½«ÏìÓ¦µÄÄÚÈÝ·¢ËÍ¸øä¯ÀÀÆ÷
 		
-+Django²éÕÒÎÄ¼þÊÇ¶èÐÔ²éÕÒ´ÓÉÏ¶øÏÂµÄ¶ÌÂ·²Ù×÷
++´ÓÉÏ¶øÏÂµÄ¶ÌÂ·²Ù×÷
 	+MEDIA_ROOT
 	+django²éÕÒtemplateÎÄ¼þµÄ·½·¨
 	+¾²Ì¬ÎÄ¼þ
@@ -82,6 +88,8 @@ Fields ¸ºÔðÑéÖ¤ÊäÈë²¢Ö±½ÓÔÚÄ£°åÖÐÊ¹ÓÃ widget ¸ºÔðäÖÈ¾ÍøÒ³ÉÏHTML±íµ¥µÄÊäÈëÔªËØºÍÌ
 			+Í¨¹ýÄ£°å±êÇ©staticºÍ¸ø¶¨µÄÏà¶ÔÂ·¾¶À´¹¹³ÉÒ»¸öURL{%loadstatic%}
 		+MEDIA_ROOTsetupload_topath
 		+MEDIA_URLÍ¨¹ýÄ£°å±êÇ©ºÍ¸ø¶¨µÄÏà¶ÔÂ·¾¶¹¹½¨URL
+
+
 
 +Django»º´æ
 	+»º´æ·½Ê½
@@ -155,14 +163,14 @@ Fields ¸ºÔðÑéÖ¤ÊäÈë²¢Ö±½ÓÔÚÄ£°åÖÐÊ¹ÓÃ widget ¸ºÔðäÖÈ¾ÍøÒ³ÉÏHTML±íµ¥µÄÊäÈëÔªËØºÍÌ
 	+ÓÃ»§ÏòÖ¸¶¨Â·¾¶×ÊÔ´Ìá½»Êý¾Ý»á´ø×ÅÓÐtokenÖµµÄcookie£¬·þÎñÆ÷Ð£ÑéÓÃ»§´«¹ýÀ´µÄcookieÖÐµÄtokenÖµÓësessionÖÐµÄtokenÖµÊÇ·ñÒ»ÖÂ		
 		
 +djangomigrations»úÖÆ:
-	+makemigrations
+	+ makemigrations
 		+±È¶ÔmodelsÀïÃæµÄmodelÓëmigrations´úÂëÀïµÄmodel¶Ô±È£¬Èç¹ûÓÐÐÂµÄÐÞ¸Ä£¬¾ÍÉú³ÉÐÂµÄmigrations´úÂë
-	+migrate
+	+ migrate
 		+½«Ïà¹ØµÄÇ¨ÒÆ½Å±¾·­Òë³ÉSQLÓï¾ä£¬ÔÚÊý¾Ý¿âÖÐÖ´ÐÐÕâ¸öSQLÓï¾ä
 		+Èç¹ûSQLÖ´ÐÐ³É¹¦£¬½«Ç¨ÒÆ½Å±¾µÄÃû×Ö¼ÇÂ¼µ½django_migrationsÖÐ
-	+migrateÔõÃ´ÅÐ¶ÏÄÄÐ©Ç¨ÒÆ½Å±¾ÐèÒªÖ´ÐÐ
+	+ migrateÔõÃ´ÅÐ¶ÏÄÄÐ©Ç¨ÒÆ½Å±¾ÐèÒªÖ´ÐÐ
 		+±È¶Ô´úÂëÖÐµÄÇ¨ÒÆ½Å±¾ºÍÊý¾Ý¿âÖÐdjango_migrationsÖÐµÄÇ¨ÒÆ½Å±¾½øÐÐ¶Ô±È£¬Èç¹ûÊý¾Ý¿âÖÐÃ»ÓÐÕâ¸öÇ¨ÒÆ½Å±¾£¬ÄÇÃ´¾Í»áÖ´ÐÐÕâ¸öÇ¨ÒÆ½Å±¾
-	+Ö´ÐÐmigrateÃüÁî±¨´í½â¾ö°ì·¨
+	+ Ö´ÐÐmigrateÃüÁî±¨´í½â¾ö°ì·¨
 		+ÕÒµ½²»Í¬µÄÇ¨ÒÆ½Å±¾Ê¹ÓÃfake½«´úÂëÖÐµÄÇ¨ÒÆ½Å±¾Ìí¼Óµ½django_migrationsµ«ÊÇ²»»áÖ´ÐÐsql
 		+ÖÕ¼«½â¾ö·½°¸£¬É¾³ýÊý¾Ý¿âÒÔ¼°´úÂëËùÓÐÇ¨ÒÆÎÄ¼þÖØÐÂmakemigrations×îºómigratefakeinitial²»»áÖ´ÐÐsql
 		
