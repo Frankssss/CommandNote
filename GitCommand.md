@@ -1,98 +1,98 @@
 # GitCommand
 
-HEAD ¹Ø¼ü×ÖÖ¸µ±Ç°·ÖÖ§Ä©ÉÒ×îĞÂµÄÒ»¸öÌá½»
+> HEAD å…³é”®å­—æŒ‡å½“å‰åˆ†æ”¯æœ«æ¢¢æœ€æ–°çš„ä¸€ä¸ªæäº¤
 
-branch  ·ÖÖ§ Ò»ÌõÏß
+> branch  åˆ†æ”¯ ä¸€æ¡çº¿
 
-tag ±êÇ© Ò»¸öµã
+> tag æ ‡ç­¾ ä¸€ä¸ªç‚¹
 
-git init   
-´´½¨Ò»¸ö¿ÕµÄGit²Ö¿â»òÖØĞÂ³õÊ¼»¯Ò»¸öÏÖÓĞ²Ö¿â
+> git init   
+>> åˆ›å»ºä¸€ä¸ªç©ºçš„Gitä»“åº“æˆ–é‡æ–°åˆå§‹åŒ–ä¸€ä¸ªç°æœ‰ä»“åº“
 
-git add <file>  
-½«¹¤×÷ÇøÎÄ¼şÌí¼Óµ½Ôİ´æÇø
+> git add <file>  
+>> å°†å·¥ä½œåŒºæ–‡ä»¶æ·»åŠ åˆ°æš‚å­˜åŒº
 
-git commit -m <message>  
-½«Ôİ´æÇøµÄÎÄ¼şÓëÃèÊöÌá½»µ½·ÖÖ§
+> git commit -m <message>  
+>> å°†æš‚å­˜åŒºçš„æ–‡ä»¶ä¸æè¿°æäº¤åˆ°åˆ†æ”¯
 
-git add origin master <url>  
-Ìí¼ÓÔ¶³Ì²Ö¿â
+> git add origin master <url>  
+>> æ·»åŠ è¿œç¨‹ä»“åº“
 
-git remote rm origin   
-É¾³ıÖ¸¶¨µÄÔ¶³Ì
+> git remote rm origin   
+>> åˆ é™¤æŒ‡å®šçš„è¿œç¨‹
 
-git remote -v  
-ÁĞ³öËùÓĞµÄÔ¶³Ì
+> git remote -v  
+>> åˆ—å‡ºæ‰€æœ‰çš„è¿œç¨‹
 
-git clone <url>  
-¿ËÂ¡Ô¶³Ì´æ´¢¿â
+> git clone <url>  
+>> å…‹éš†è¿œç¨‹å­˜å‚¨åº“
 
-git status  
-²é¿´Ôİ´æÇøºÍ¹¤×÷ÇøµÄ×´Ì¬
+> git status  
+>> æŸ¥çœ‹æš‚å­˜åŒºå’Œå·¥ä½œåŒºçš„çŠ¶æ€
 
-git log  
-²é¿´Ìá½»ÈÕÖ¾ÀúÊ·ĞÅÏ¢
+> git log  
+>> æŸ¥çœ‹æäº¤æ—¥å¿—å†å²ä¿¡æ¯
 
-git diff <file>  
-¶Ô±È¹¤×÷ÇøºÍÔİ´æÇøÎÄ¼şµÄ²îÒì
+> git diff <file>  
+>> å¯¹æ¯”å·¥ä½œåŒºå’Œæš‚å­˜åŒºæ–‡ä»¶çš„å·®å¼‚
 
-git diff HEAD -- <file>  
-²é¿´¹¤×÷ÇøºÍ°æ±¾¿âÇø±ğ
+> git diff HEAD -- <file>  
+>> æŸ¥çœ‹å·¥ä½œåŒºå’Œç‰ˆæœ¬åº“åŒºåˆ«
 
-git diff --staged / git diff --cached  
-±È½ÏÔİ´æÇøºÍ°æ±¾¿â²îÒì
+> git diff --staged / git diff --cached  
+>> æ¯”è¾ƒæš‚å­˜åŒºå’Œç‰ˆæœ¬åº“å·®å¼‚
 
-git reset HEAD <commit>  
-½«µ±Ç°·ÖÖ§HEAD¸´Î»µ½Ö¸¶¨×´Ì¬
+> git reset HEAD <commit>  
+>> å°†å½“å‰åˆ†æ”¯HEADå¤ä½åˆ°æŒ‡å®šçŠ¶æ€
 
-git reset --hard <commit>  
-½«Ôİ´æÇøºÍ¹¤×÷Çø×ÔÉÏÒ»´ÎcommitºóµÄ¸ü¸Ä¶¼¶ªÆú£¬ ²¢°ÑHEADÖ¸Ïò<commit>
+> git reset --hard <commit>  
+>> å°†æš‚å­˜åŒºå’Œå·¥ä½œåŒºè‡ªä¸Šä¸€æ¬¡commitåçš„æ›´æ”¹éƒ½ä¸¢å¼ƒï¼Œ å¹¶æŠŠHEADæŒ‡å‘<commit>
 
-git rm <file>  
-É¾³ı¹¤×÷ÇøºÍÔİ´æÇøµÄÎÄ¼ş
+> git rm <file>  
+>> åˆ é™¤å·¥ä½œåŒºå’Œæš‚å­˜åŒºçš„æ–‡ä»¶
 
-git checkout -- <file>  
-½«Ôİ´æÇøÎÄ¼ş»Ö¸´µ½¹¤×÷Çø
+> git checkout -- <file>  
+>> å°†æš‚å­˜åŒºæ–‡ä»¶æ¢å¤åˆ°å·¥ä½œåŒº
 
-git mv <source> <destination>  
-ÒÆ¶¯¹¤×÷ÇøÎÄ¼ş
+> git mv <source> <destination>  
+>> ç§»åŠ¨å·¥ä½œåŒºæ–‡ä»¶
 
-git mv <filename> <filename>
-ÖØÃüÃû¹¤×÷ÇøÎÄ¼ş
+> git mv <filename> <filename>
+>> é‡å‘½åå·¥ä½œåŒºæ–‡ä»¶
 
-git branch  
-²é¿´µ±Ç°·ÖÖ§
+> git branch  
+>> æŸ¥çœ‹å½“å‰åˆ†æ”¯
 
-git branch <branchname>  
-´´½¨·ÖÖ§
+> git branch <branchname>  
+>> åˆ›å»ºåˆ†æ”¯
 
-git checkout <branchname>  
-ÇĞ»»µ½Ö¸¶¨·ÖÖ§
+> git checkout <branchname>  
+>> åˆ‡æ¢åˆ°æŒ‡å®šåˆ†æ”¯
 
-git checkout -b  <branchname>  
-´´½¨²¢ÇĞ»»µ½·ÖÖ§
+> git checkout -b  <branchname>  
+>> åˆ›å»ºå¹¶åˆ‡æ¢åˆ°åˆ†æ”¯
 
-git merge <branchname>  
-ºÏ²¢·ÖÖ§
+> git merge <branchname>  
+>> åˆå¹¶åˆ†æ”¯
 
-git branch -d <branchname>  
-É¾³ı·ÖÖ§
+> git branch -d <branchname>  
+>> åˆ é™¤åˆ†æ”¯
 
-git tag  
-²é¿´ËùÓĞ±êÇ©
+> git tag  
+>> æŸ¥çœ‹æ‰€æœ‰æ ‡ç­¾
 
-git tag <name>  
-¸øµ±Ç°·ÖÖ§Ìí¼Ó±êÇ©
+> git tag <name>  
+>> ç»™å½“å‰åˆ†æ”¯æ·»åŠ æ ‡ç­¾
 
-git tag <name> <commit>  
-¸øÌá½»ÀúÊ·¼Ó±êÇ©
+> git tag <name> <commit>  
+>> ç»™æäº¤å†å²åŠ æ ‡ç­¾
 
-git tag -d name  
-É¾³ı±êÇ©
+> git tag -d name  
+>> åˆ é™¤æ ‡ç­¾
 
-git push origin name  
-±êÇ©·¢²¼
+> git push origin name  
+>> æ ‡ç­¾å‘å¸ƒ
 
-git config --global alias.st status
-ÅäÖÃ±ğÃû
+> git config --global alias.st status
+>> é…ç½®åˆ«å
 
