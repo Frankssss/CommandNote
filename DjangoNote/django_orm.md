@@ -1,6 +1,9 @@
 
 # ORM object related mapping  对象关系映射 
-### 隐藏不同数据库的操作细节，把各个不同数据库的操作用同一套api来实现
+
+## ORM总览
+
+### orm 隐藏不同数据库的操作细节，把各个不同数据库的操作用同一套api来实现
 
 正向操作 sql到object的转换
 反向操作 object到sql的转换
@@ -35,4 +38,9 @@
 4. 不要使用len(query_set)， 用count()代替，不是使用if query_set， 用exist()代替，不是代替
 5. 复杂的查询， 例如表之间的join使用raw_sql代替
 
+
+## orm核心模块
+backends 多数据支持，通用的sql代码， 数据库连接， 管理游标
+migrations model的更新触发重建表结构的功能， 即实现了South的功能
+models 对象字段类型的提供， 对象管理， 基础查询， 聚合查询
 
